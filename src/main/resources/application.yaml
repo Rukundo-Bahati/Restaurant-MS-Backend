@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restaurant_db
+    username: postgres
+    password:
+
+  application:
+    name: RestaurantApp
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 5c10f64296d520
+    password: 59a4a613105052
+    test-connection: false
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: "BWgwvfUQbvfyhCHdIlcrFDn8/dAlonrY+Kj+DJ8mhSkkFl2v+XDv/M1KK9jWO+Bi0PF88wwTmkciUO3x7/d9Mqo/lv+5qk/Fz/YM97ylIEXhAz/e/1iPC95+f3UoyiIxTYf5z2vRfKu6twhjUwMZ+9eKiLfxqkHpOqAmWZhPSr2TRL+V91I303uyoYy7cU8LiX0LVkvXvTDX4vS7wdvGPvLIUxBzC1I/Ko6n+5oHNZm+bQhoph0SEHP8ne9n6EZQ8/sMJNs8wLX7qyuanD8KhkAnn+vFTu4PTzNnV+JwUGN1L87qRiZ7CIoNwasazvgu0rvFZH5g3Hx2kVRM82zznCmbWgYdCCR0vpR1Ourj23M="
+  expiration: 86400000
