@@ -44,7 +44,7 @@ Scalable token strategy compatible with Postman, frontend, and mobile.
 bash
 Copy
 Edit
-git clone https://github.com/your-username/restaurant-management-system.git
+git clone https://github.com/Rukundo-Bahati/Restaurant-MS-Backend
 cd restaurant-management-system
 2. Configure Database
 Update application.properties:
